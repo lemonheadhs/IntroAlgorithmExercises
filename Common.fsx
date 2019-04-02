@@ -10,5 +10,5 @@ let readFromBinaryFile<'T> filePath =
     let bformatter = System.Runtime.Serialization.Formatters.Binary.BinaryFormatter()
     bformatter.Deserialize(stream) :?> 'T
 
-let Exercise (name: string) (u: unit) = ()
+let Exercise (name: string) expr = ()
 
